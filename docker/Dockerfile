@@ -90,7 +90,10 @@ RUN apt-get update && \
         libmkl-locale \
         libmkl-intel-lp64 \
         libmkl-intel-thread \
-        libmkl-core && \
+        libmkl-core \
+        ffmpeg \
+        python3 \
+        python3-pip && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
